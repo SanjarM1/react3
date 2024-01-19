@@ -64,7 +64,7 @@ function App() {
                         </div>
                         <div className="modal-body">
                           <form onSubmit={(e) => editTask(e, index, item)} id='form2' >
-                            <input className='form-control mb-3' defaultValue={tasks[index].title} onChange={handleTitle} type="text" placeholder='title' />
+                            <input className='form-control mb-3' defaultValue={item.title} onChange={handleTitle} type="text" placeholder='title' />
                             <select defaultValue={item.status} onChange={handleStatus} className='form-select'>
                               <option value="" hidden>Select status</option>
                               <option value="open">open</option>
